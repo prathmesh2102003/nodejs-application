@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: python-app
-          image: prathmesh2102003/employee-portal:tag
+          image: prathmesh2102003/employee-portal:b5caf8e8f05241679b34132f9cba441da2fbf18d
           ports:
             - containerPort: 5000
           env:
