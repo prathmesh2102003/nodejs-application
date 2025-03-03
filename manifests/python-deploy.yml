@@ -14,9 +14,9 @@ spec:
     spec:
       containers:
         - name: python-app
-          image: prathmesh2102003/employee-portal:b5caf8e8f05241679b34132f9cba441da2fbf18d
+          image: prathmesh2102003/nodejs:8855974e2b4e4dbc73524fdba88623cb010945ac
           ports:
-            - containerPort: 5000
+            - containerPort: 3000
           env:
             - name: ENV
               value: "production"
