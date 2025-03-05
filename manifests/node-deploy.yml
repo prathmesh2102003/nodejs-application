@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: node-app
-          image: prathmesh2102003/nodejs:03973bc7
+          image: prathmesh2102003/nodejs:c3c0d53b
           ports:
             - containerPort: 3000
           env:
