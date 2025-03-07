@@ -14,7 +14,7 @@
     #spec:
       #containers:
         #- name: node-app
-          #image: prathmesh2102003/nodejs:a0941f31
+          #image: registry.gitlab.com/prathmesh.arcade/node-js-appication:699faaa5
           #ports:
             #- containerPort: 3000
           #env:
