@@ -1,26 +1,4 @@
-#apiVersion: apps/v1
-#kind: Deployment
-#metadata:
-  #name: node-app-deployment
-#spec:
-  #replicas: 2
-  #selector:
-    #matchLabels:
-      #app: node-app
-  #template:
-    #metadata:
-      #labels:
-        #app: node-app
-    #spec:
-      #containers:
-        #- name: node-app
-          #image: registry.gitlab.com/prathmesh.arcade/node-js-appication:699faaa5
-          #ports:
-            #- containerPort: 3000
-          #env:
-            #- name: ENV
-              #value: "production"
-
+# for Gitlab Registry
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -37,10 +15,33 @@ spec:
     spec:
       containers:
         - name: node-app
-          image: prathmesh2102003/nodejs:c5153275
+          image: registry.gitlab.com/prathmesh.arcade/node-js-appication:699faaa5
           ports:
             - containerPort: 3000
           env:
             - name: ENV
               value: "production"
+# for Docker Hub
+#apiVersion: apps/v1
+#kind: Deployment
+#metadata:
+  #name: node-app-deployment
+#spec:
+  #replicas: 2
+  #selector:
+    #matchLabels:
+      #app: node-app
+  #template:
+    #metadata:
+      #labels:
+        #app: node-app
+    #spec:
+      #containers:
+        #- name: node-app
+          #image: prathmesh2102003/nodejs:c5153275
+          #ports:
+            #- containerPort: 3000
+          #env:
+            #- name: ENV
+              #value: "production"
 
