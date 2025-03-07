@@ -12,13 +12,13 @@ spec:
     metadata:
       labels:
         app: node-app
-    #spec:
-      #containers:
-        #- name: node-app
-          #image: prathmesh2102003/nodejs:51ff5359
-          #ports:
-            #- containerPort: 3000
-          #env:
-            #- name: ENV
-              #value: "production"
+    spec:
+      containers:
+        - name: node-app
+          image: prathmesh2102003/nodejs:51ff5359
+          ports:
+            - containerPort: 3000
+          env:
+            - name: ENV
+              value: "production"
 
